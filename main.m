@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "rectangular.h"
+#import "trapeziod.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -18,3 +19,12 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+
+Trapezoid *trap = [[Trapezoid alloc] init];
+
+trap.base1 = 10;
+trap.base2 = 6;
+trap.height = 4;
+
+NSLog(@"Trapezoid square: %.2f", [trap square]);
+NSLog(@"Trapezoid perimeter: %.2f", [trap perimeter]);
